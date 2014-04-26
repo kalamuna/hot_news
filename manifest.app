@@ -49,4 +49,4 @@ downloadables[strongarm 7.x-2.0] = http://ftp.drupal.org/files/projects/strongar
 downloadables[views_autocomplete_filters 7.x-1.0] = http://ftp.drupal.org/files/projects/views_autocomplete_filters-7.x-1.0.tar.gz
 downloadables[panopoly_pages 7.x-1.0-rc5] = http://ftp.drupal.org/files/projects/panopoly_pages-7.x-1.0-rc5.tar.gz
 downloadables[menu_block 7.x-2.3] = http://ftp.drupal.org/files/projects/menu_block-7.x-2.3.tar.gz
-downloadables[hot_news 7.x-1.0-beta1] = https://github.com/kalamuna/hot_news/archive/master.zip
+downloadables[hot_news 7.x-1.0-beta1] = https://github.com/kalamuna/hot_news/archive/7.x-1.0-beta1.tar.gz

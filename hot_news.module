@@ -7,42 +7,19 @@
 include_once 'hot_news.features.inc';
 
 /**
- * Implementation of hook_apps_app_info()
+ * provides server information to the apps
+ *
+ * this hook is only called on the current profile
+ * RETURN: an array of assoctive server arrays
  */
-function hot_news_apps_app_info() {
+function hot_news_apps_servers_info() {
   return array(
-    'demo content description' => 'If you are using HotNews! for the first time we recommend you install some demo content to see how the magic works.<br/><br/>',
-    'demo content module' => 'hot_news_demo',
-    'demo content link path' => 'news',
-  	'configure form' => 'hot_news_configure_form',
-  );
-}
-
-/**
- * Config form for HotNews!
- */
-function hot_news_configure_form($form, &$form_state) {
-  $form = array();
-
-  // This is currently just to test the apps config integration
-  $form['hot_news_config_group'] = array(
-      '#type' => 'fieldset',
-      '#title' => "Configuration Options for HotNews!",
-  );
-
-  $form['hot_news_config_group']['hot_news_test'] = array(
-    '#title' => t('Trivia'),
-    '#type' => 'select',
-    '#required' => TRUE,
-    '#options' => array(
-      '1' => 'Mark Antony',
-      '0' => 'Mark Anthony',
+    'hotapps' => array(
+      'title' => 'HotApps!',
+      'description' => 'First generation HotApps! for the people.',
+      'manifest' => 'http://apps.kalamuna.com/hotapps1',
     ),
-    '#default_value' => variable_get('hot_news_test', FALSE) ? '1' : '0',
-    '#description' => t('Which Mark is superior?'),
   );
-
-  return system_settings_form($form);
 }
 
 /**
